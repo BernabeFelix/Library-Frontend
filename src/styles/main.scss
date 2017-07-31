@@ -1,3 +1,5 @@
+$headerHeight: 50px;
+
 body {
   background-color: #F5F8FA;
   font-size: 16px;
@@ -9,5 +11,6 @@ body {
 }
 
 @import './_header';
+@import './_carousel';
 @import './_content';
 @import './_footer';
