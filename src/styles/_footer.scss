@@ -1,0 +1,33 @@
+footer {
+  $footerHeight: 60px;
+  height: $footerHeight;
+  background-color: #F1F1F1;
+
+  %centerVertical {
+    transform: translateY(25%);
+  }
+
+  #footer-logo {
+    height: $footerHeight;
+    img {
+      max-height: 100%;
+      @extend %centerVertical;
+    }
+  }
+
+  #social {
+    height: $footerHeight;
+    @extend %centerVertical;
+
+    .social-item {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #footer-logo img {
+      height: 60px;
+      transform: none;
+    }
+  }
+}

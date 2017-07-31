@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Library</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet" type="text/css">
     <!-- bootstrap styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- custom styles -->
     <link rel="stylesheet" href="main.css">
-    <!-- jquery & bootstrap -->
+    <!-- jquery, bootstrap & fontawesome -->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/e73104c1f8.js"></script>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
@@ -24,7 +27,7 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Internal Link</a></li>
+            <li><a href="#right-content">Internal Link</a></li>
             <li><a href="http://www.gandhi.com.mx/">External Link</a></li>
           </ul>
         </div>
@@ -60,18 +63,59 @@
     <!-- Main Content -->
     <div id="main-content" class="container-fluid">
       <div class="row">
-        <div id="left-content" class="col-xs-6">
+        <div id="left-content" class="col-xs-12 col-sm-6">
           <p>
             Librerías Gandhi se fundó en junio de 1971. El local original medía unos 150 m2 y estaba ubicado en Miguel
             Ángel de Quevedo 128, al sur de la ciudad de México. Aunque era pequeña, la librería tenía su cafetería en el
             mezanine, donde también se desarrollaron las primeras actividades culturales (funciones de cine, teatro,
             música, etc.) que fueron una característica de Gandhi en los años posteriores.
           </p>
+          <p><strong>Librerías Gandhi</strong> se fundó en junio de 1971. El local original medía unos 150 m2 y estaba
+            ubicado en Miguel Ángel de Quevedo 128, al sur de la ciudad de México. Aunque era pequeña, la librería tenía
+            su cafetería en el mezanine, donde también se desarrollaron las primeras actividades culturales (funciones
+            de cine, teatro, música, etc.) que fueron una característica de Gandhi en los años posteriores.
+          </p>
+
         </div>
-        <div id="right-content" class="col-xs-6">
-          <img class="img img-responsive" src="http://www.gandhi.com.mx/media/wysiwyg//cms/history.jpg" alt="ghandi">
+        <div id="right-content" class="col-xs-12 col-sm-6">
+          <img class="img img-responsive" src="http://www.gandhi.com.mx/media/wysiwyg//cms/history.jpg" alt="gandhi">
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer  class="footer navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <!-- logo -->
+          <div class="col-xs-4" id="footer-logo">
+            <img class="img img-responsive" src="https://s3.amazonaws.com/CPcms/especial/gandhi-bloque-gana-kmp.jpg" alt="gandhi logo">
+          </div>
+          <!-- whatever -->
+          <div class="hidden-xs col-sm-4">
+
+          </div>
+          <!-- social -->
+          <div class="col-xs-8 col-sm-4" id="social">
+            <div class="col-xs-4">
+              <a class="social-item" href="https://www.facebook.com/LibreriasGandhi" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a class="social-item" href="https://twitter.com/LibreriasGandhi" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a class="social-item" href="http://instagram.com/librerias_gandhi" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

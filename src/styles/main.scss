@@ -1,6 +1,13 @@
-@import './_header';
-@import './_content';
-
 body {
   background-color: #F5F8FA;
+  font-size: 16px;
+  font-family: Raleway;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
+
+@import './_header';
+@import './_content';
+@import './_footer';
