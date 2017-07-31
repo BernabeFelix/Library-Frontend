@@ -1,12 +1,11 @@
 const express = require('express'),
-  http = require('http'),
-  hostname = 'localhost',
-  port = 3000;
+  port = process.env.PORT || 9000,
+  staticDest = process.env.NODE_ENV === 'production' ? 'dist' : 'src';
 
-app = express();
+const app = express();
 
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(`${__dirname}/${staticDest}`));
 
-app.listen(port, hostname, function() {
-  console.log(`running server at http://${hostname}:${port}`);
+app.listen(port, function() {
+  console.log(`running server on port: ${port}`);
 });
