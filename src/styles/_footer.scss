@@ -11,7 +11,7 @@ footer {
     height: $footerHeight;
     img {
       max-height: 100%;
-      @extend %centerVertical;
+      position: absolute;
     }
   }
 
